@@ -2,6 +2,9 @@
 
 @section('content')
     <h1>Index </h1>
+    <div>
+        <a class="btn btn-success" href="{{ route('admin.projects.create') }}">Crea</a>
+    </div>
     <table class="table">
         <thead>
           <tr>
@@ -19,6 +22,8 @@
               <td>{{ $curProject->title }}</td>
               <td>{{$curProject->content}}</td>
               <td>{{$curProject->slug}}</td>
+              <td>
+              </td>
             </tr>
                 
             @endforeach

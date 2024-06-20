@@ -43,7 +43,8 @@
                             method='POST'>
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger" href="">Elimina</button>
+                            <button type="submit" class="btn btn-danger" href=""><i
+                              class="fa-solid fa-trash"></i></button>
                         </form>
 
                         {{-- <form action="{{ route('admin.projects.destroy', ['project' => $curProject->slug]) }}"

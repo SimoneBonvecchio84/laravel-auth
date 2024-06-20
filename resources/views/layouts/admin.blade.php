@@ -64,9 +64,15 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white {{ Route::currentRouteName() == 'dashboard' ? 'bg-secondary' : '' }}"
+                <a class="nav-link text-white {{ Route::currentRouteName() == 'projects' ? 'bg-secondary' : '' }}"
                   href="{{ route('admin.projects.index') }}">
                   <i class="fa-solid fa-tachometer-alt fa-lg fa-fw"></i> Project
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white {{ Route::currentRouteName() == 'projects' ? 'bg-secondary' : '' }}"
+                  href="{{ route('admin.projects.create') }}">
+                  <i class="fa-solid fa-plus px-1"></i> Add new Project
                 </a>
               </li>
             </ul>

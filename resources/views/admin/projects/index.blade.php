@@ -12,7 +12,8 @@
             <th scope="col">Titolo</th>
             <th scope="col">Contenuto</th>
             <th scope="col">Slug</th>
-            <th scope="col">Azioni</th>   
+            <th scope="col">Dettagli</th>   
+            <th scope="col">Modifica</th>   
           </tr>
         </thead>
         <tbody>
@@ -24,6 +25,9 @@
               <td>{{$curProject->slug}}</td>
               <td>
                 <a class="btn btn-info" href="{{ route('admin.projects.show',['project'=>$curProject->slug]) }}">Dettagli</a>
+              </td>
+              <td>
+                <a class="btn btn-warning" href="{{ route('admin.projects.edit',['project'=>$curProject->slug]) }}">Modifica</a>
               </td>
             </tr>
                 

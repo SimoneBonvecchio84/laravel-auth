@@ -23,6 +23,7 @@
               <td>{{$curProject->content}}</td>
               <td>{{$curProject->slug}}</td>
               <td>
+                <a class="btn btn-info" href="{{ route('admin.projects.show',['project'=>$curProject->slug]) }}">Dettagli</a>
               </td>
             </tr>
                 
